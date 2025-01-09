@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/eel.js"></script>
+    <script src="script.js"></script>
+    <title>Youtube Downloader</title>
+    <link rel="icon" href="icon/app_logo.png" sizes="192x192" type="image/png">
+</head>
+<body>
+    <div class="upper_container">
+        <div class="folder_select">
+            <button id="folder_button" class="folder_button_class">
+                <span class="icon2"></span>
+            </button>
+            <div class="download_location"></div>
+        </div>
+    </div>
+
+    <div class="main_container">
+        <!-- <div class="geometry prop"></div> -->
+
+        <div class="text_input_container">
+            <input type="text" class="submit_input" placeholder="Insert link...">
+        </div>
+
+        <div class="search_icon_container">
+            <button id="search_button" class="submit_button">
+                <span class="icon"></span>
+
+            </button>
+        </div>
+
+        <!-- <div class="geometry prop"></div> -->
+    </div>
+
+    <div class="skeleton_container">
+        <div class="skeleton_thumbnail sk_all">
+        </div>
+
+        <div class="skeleton_information sk_all">
+            <div class="skeleton_title sk_all">
+            </div>
+
+            <div class="skeleton_author sk_all">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="error_container">
+        <div class="error_text">
+            This link is not valid, try again.
+        </div>
+    </div>
+    
+    <div class="video_container">
+        <div class="thumbnail_container">
+            <img class="thumbnail" src="" alt="Thumbnail">
+                <img class="blurred" src="" alt="Thumbnail_blurred">
+                </img>
+            </img>
+        </div>
+
+        <div class="video_information">
+
+            <div class="video_title">
+            </div>
+    
+            <div class="video_author">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="download_title">
+    </div>
+    <div class="download_options">
+        <div class="video_download">
+            <button id="video_dwnld" class="video_dwnld_bttn download_text">
+            Video .mp4
+            </button>
+        </div>
+
+        <div class="audio_download">
+            <button id="audio_dwnld" class="audio_dwnld_bttn download_text">
+            Audio .mp3 
+            </button>
+        </div>
+
+    </div>
+    <div class="download_container">
+        Download Status
+        <div class="download_bar">
+            <div class="download_progress"></div>
+        </div>
+    </div>
+</body>
+</html>
